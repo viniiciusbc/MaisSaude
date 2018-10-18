@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+	<!--font puxada do servidor da google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--css do materialize-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Meu css do-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--mostrando pro browser que é uma página otimizada pra mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <title>Mais Saúde | Encontre seu médico</title>
+
+</head>
+<body>
+
+	
+
+
+	<!--Codigo do menu-->
+ 	<nav class="white" role="navigation">
+	    <div class="nav-wrapper container">
+	      <a id="logo-container" href="#" class="brand-logo teal-text">+Saúde</a>
+	      <ul class="right hide-on-med-and-down">
+	        <li><a href="#">Fazer Login</a></li>
+	      </ul>
+
+	      <ul id="nav-mobile" class="sidenav">
+	        <li><a href="#">Fazer Login</a></li>
+	      </ul>
+	      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	    </div>
+ 	 </nav>
+
+	<!--primeiro container da pagina-->
+ 	 
+		<div id="index-banner" class="parallax-container">
+	    <div class="section no-pad-bot">
+	      <div class="container">
+	        <br><br>
+	        <h1 class="header center white-text text-lighten-2">Mais Saúde</h1>
+	        <div class="row center">
+	          <h5 class="header col s12 light sub_header white-text">Agende de maneira fácil sua consulta!</h5>
+	        </div>
+	        
+	        <div class="row center">
+          		<div class="btn_pesquisar input-field col s12">
+          			<div class="input-field col s12">
+          				<i class="material-icons prefix teal-text">search</i>
+          				<input type="text" id="autocomplete-input" class="autocomplete">
+          				<label for="autocomplete-input">O que gostaria de agendar</label>
+       				 </div>
+          		</div>
+       		</div>
+	        
+	       
+	        <br><br>
+
+	      </div>
+	    </div>
+	    <div class="parallax"><img src="img/imagem_01.png" alt="Pesquisar medicos"></div>
+  	</div>
+
+  	<!--   Sessão de icones falando sobre o sistema   -->
+  	<div class="container">
+	    <div class="section">
+
+	       <div class="row">
+	        <div class="col s12 m4">
+	          <div class="icon-block">
+	            <h2 class="center teal-text"><i class="material-icons">place</i></h2>
+	            <h5 class="center">Encontre o médico ideal</h5>
+
+	            <p class="light">Aqui você encontra o médico ideal de maneira prática e simples, e o melhor, sem sair do conforto de sua casa. Tenha a experiência do melhor agendamento online que você poderá ter!</p>
+	          </div>
+	        </div>
+
+	        <div class="col s12 m4">
+	          <div class="icon-block">
+	            <h2 class="center teal-text"><i class="material-icons">star_half</i></h2>
+	            <h5 class="center">O melhor pra você!</h5>
+
+	            <p class="light">No +Saúde temos todos os médicos sendo avaliados a todo o momento, você como paciente poderar avaliar o atendimento e dar o feedback! Com isso sempre teremos os melhores profissionais pra poder fornecer o melhor serviço!</p>
+	          </div>
+	        </div>
+
+	        <div class="col s12 m4">
+	          <div class="icon-block">
+	            <h2 class="center teal-text"><i class="material-icons">queue_play_next</i></h2>
+	            <h5 class="center">Venha para o +Saúde!</h5>
+
+	            <p class="light">Em média uma pessoa gasta de 30 a 40 minutos só para encontrar um médico especialista e mais 10 minutos para conseguir agendar um horário. Com o +Saúde tudo isso é feito na ponta dos seus dedos em menos de 5 minutos, uma economia de tempo e dinheiro. +Saúde é conforto, praticidade e bem estar.</p>
+	          </div>
+	        </div>
+	      </div>
+
+	   	 </div>
+  	</div>
+
+  	<!--   Sessão para captar os médicos-->
+  	<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">É médico? Venha trabalhar conosco, faça parte da nossa família!</h5>
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light white lighten-1 teal-text">Faça seu cadastro</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax"><img src="img/imagem_02.png" alt="Contratar medicos"></div>
+  </div>
+
+  <!--   Sessão de contato-->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+            <div class="col m10 offset-m1 s12">
+            <h2 class="center-align">Entre em contato</h2>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">Primeiro nome</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Sobrenome</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            <input id="email_name" type="text" class="validate">
+                            <label for="email_name">E-mail</label>
+                        </div>
+                        <div class="input-field col m6 s12">
+                            <input id="assunto_name" type="text" class="validate">
+                            <label for="assunto_name">Assunto</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="message" class="materialize-textarea"></textarea>
+                          <label for="message">Mensagem</label>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col m12">
+                         <p class="right-align"><button class="btn btn-large teal accent-4 waves-effect waves-light" type="button" name="action">enviar mensagem</button></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Rodapé da página-->
+  <footer class="page-footer teal accent-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Quem somos</h5>
+          <p class="grey-text text-lighten-4">Somos uma empresa que tem como propósito melhorar a qualidade da súde brasileira, começando pelo básico, pelo início de tudo, pelo simples ato de tentar agendar uma consulta.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Mapa do site</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Home</a></li>
+            <li><a class="white-text" href="#!">Trabalhe conosco</a></li>
+            <li><a class="white-text" href="#!">Faça seu cadastro</a></li>
+            <li><a class="white-text" href="#!">Entre em conato</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Fique conectado!</h5>
+          <ul>
+            <li><a class="white-text" href="#!">FaceBook</a></li>
+            <li><a class="white-text" href="#!">Instagram</a></li>
+            <li><a class="white-text" href="#!">AppleStore</a></li>
+            <li><a class="white-text" href="#!">Android</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Feito com muito amor e carinho pela equipe de Programação Web!
+      </div>
+    </div>
+  </footer>
+
+  	
+
+
+ <!--  Scripts-->
+ <script>
+ 	$(document).ready(function() {
+    $('select').material_select();
+  });
+
+ 	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.autocomplete');
+    var instances = M.Autocomplete.init(elems, options);
+  });
+       
+ </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>

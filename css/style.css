@@ -1,0 +1,106 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* Css exclusivo da pagina HOME */
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+.btn_pesquisar{
+  width: 632px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.37);
+  -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.37);
+  box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.37);
+  
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* Css exclusivo da pagina lista_medicos */
+.medico_card_horarios span{
+  width: 100%;
+  display: block;
+}
+
+.medico_card_horarios a{
+  margin: 1%;
+}
+
+
+/* Css para medico_info*/
+
+.medico_info_container{
+  margin-top: 5%;
+}
+.img_medico_info{
+  float: left;
+  max-width: 200px;
+}
+
+.medico_info h4{
+  display: block;
+  margin: -0.48rem 0 .912rem 0;
+}
+
+.crp_medico_info{
+  display: block;
+  margin: -0.906667rem 0 .656rem 0;
+  width: 70%;
+}
+
+.info_medicos_completo{
+  display: block;
+}
