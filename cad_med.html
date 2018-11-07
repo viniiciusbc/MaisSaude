@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+<!--font puxada do servidor da google-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--css do materialize-->
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<!--Meu css do-->
+<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+<!--mostrando pro browser que é uma página otimizada pra mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="utf-8">    
+<title>Mais Saúde | Encontre seu médico</title>
+
+</head>
+<body>
+
+
+
+
+<!--Codigo do menu-->
+<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="home.html" class="brand-logo teal-text">+Saúde</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Fazer Login</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        
+        
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Fazer Cadastro</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="cad_med.html">Fazer Cadastro</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>    
+      
+    </div>
+ </nav>
+
+
+
+<!--   Sessão de icones falando sobre o sistema   -->
+<div class="container">
+    <div class="section">
+
+       <div class="row">
+           <div class="col m10 offset-m1 s12">
+        <h2 class="center-align">Cadastro Médico</h2>
+        <div class="row">
+<form class="col s12" onsubmit="Deu certo">
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="first_name" type="text" class="validate">
+      <label for="Nome">Nome</label>
+      
+    </div>
+    <div class="input-field col s6">
+      <input id="last_name" type="text" class="validate">
+      <label for="Sobrenome">Sobrenome</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s6">
+      <input id="CPF" type="number" class="validate" maxlength="14">
+      <label for="CPF">CPF</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="rg" type="number" class="validate">
+      <label for="RG">RG</label>
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input id="CRM" type="number" class="validate">
+      <label for="CRM">CRM</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="endereco" type="text" class="validate">
+      <label for="endereco">Endereço</label>
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s6">
+      <input id="senha" type="password" class="validate">
+      <label for="Senha">Senha</label>
+    </div>
+    <div class="input-field col s6">
+      <input id="reSenha" type="password" class="validate">
+      <label for="Senha">Repetir Senha</label>
+    </div>
+  </div>
+    <div class="row">
+    <div class="input-field col s12">
+      <input id="email" type="text" class="validate">
+      <label for="password">E-mail</label>
+    </div>
+  </div>
+ 
+    <div class="row">
+     <div class="col m12">
+        <p class="right-align"><a onclick="M.toast({html: 'Cadastrado com sucesso!'}); limpar() " class="waves-effect waves-light btn btn-large teal accent-4 modal-trigger">Fazer Cadastro</a></p>
+          <!-- Modal Structure -->
+        </div>
+    </div>
+</form>
+</div>
+
+
+     </div>
+</div>
+    </div>
+    </div>
+
+
+<!--Rodapé da página-->
+<footer class="page-footer teal accent-4">
+<div class="container">
+  <div class="row">
+    <div class="col l6 s12">
+      <h5 class="white-text">Quem somos</h5>
+      <p class="grey-text text-lighten-4">Somos uma empresa que tem como propósito melhorar a qualidade da súde brasileira, começando pelo básico, pelo início de tudo, pelo simples ato de tentar agendar uma consulta.</p>
+    </div>
+    <div class="col l3 s12">
+      <h5 class="white-text">Mapa do site</h5>
+      <ul>
+        <li><a class="white-text" href="#!">Home</a></li>
+        <li><a class="white-text" href="#!">Trabalhe conosco</a></li>
+        <li><a class="white-text" href="#!">Faça seu cadastro</a></li>
+        <li><a class="white-text" href="#!">Entre em conato</a></li>
+      </ul>
+    </div>
+    <div class="col l3 s12">
+      <h5 class="white-text">Fique conectado!</h5>
+      <ul>
+        <li><a class="white-text" href="#!">FaceBook</a></li>
+        <li><a class="white-text" href="#!">Instagram</a></li>
+        <li><a class="white-text" href="#!">AppleStore</a></li>
+        <li><a class="white-text" href="#!">Android</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+  Feito com muito amor e carinho pela equipe de Programação Web!
+  </div>
+</div>
+</footer>
+
+
+
+
+<!--  Scripts-->
+<script>
+$(document).ready(function() {
+$('select').material_select();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('.autocomplete');
+var instances = M.Autocomplete.init(elems, options);
+});
+    
+$(document).ready(function() {
+$('.modal').modal();
+});
+    
+M.toast({html: 'Cadastrado com sucesso!'});
+
+function limpar(){
+    document.getElementById("first_name").value=""
+    document.getElementById("last_name").value=""
+    document.getElementById("CPF").value=""
+    document.getElementById("rg").value=""
+    document.getElementById("CRM").value=""
+    document.getElementById("endereco").value=""
+    document.getElementById("senha").value=""
+    document.getElementById("reSenha").value=""
+    document.getElementById("email").value=""
+};
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+</body>
+</html>
